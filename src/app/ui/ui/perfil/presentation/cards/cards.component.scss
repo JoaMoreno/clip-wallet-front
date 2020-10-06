@@ -1,0 +1,88 @@
+a{
+    text-decoration: none;
+}
+.card {
+  &__title {
+    font-size: 1.5rem;
+    color: rgb(94, 94, 94);
+    padding: 15px;
+    max-width: 375px;
+    transition: all ease .5s;
+    &:hover{
+        color: rgb(59, 59, 59);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  &__container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 695px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__body {
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    background: gray;
+    margin: 15px 0;
+    padding: 15px 0;
+    border-radius: 8px;
+    padding-left: 1.5em;
+    max-height: 214px;
+    max-width: 375px;
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 0.5);
+    &__data {
+        text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+      .data--number {
+        font-size: 2rem;
+        letter-spacing: 2.5px;
+      }
+      .data--vto {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.card__type {
+  &--naranja {
+    background: #ff512f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #f09819,
+      #ff512f
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      -45deg,
+      #f09819,
+      #ff512f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--visa {
+    background: #1a2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #26d0ce,
+      #1a2980
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      -45deg,
+      #26d0ce,
+      #1a2980
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--master-card {
+    background: #ff512f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #dd2476,
+      #ff512f
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      -45deg,
+      #dd2476,
+      #ff512f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
